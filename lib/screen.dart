@@ -10,14 +10,23 @@ class ScreenData extends StatefulWidget {
 class _ScreenDataState extends State<ScreenData> {
   void sentdata(bool _test) {
     setState(() {
-      final dbref = FirebaseDatabase.instance.reference();
+      final dbreferance = FirebaseDatabase.instance.reference();
       _test == true
-          ? dbref.set({'switch2': 'on'})
-          : dbref.set({'switch2': 'off'});
+          ? dbreferance.set({'switch2': 'follow'})
+          : dbreferance.set({'switch2': 'control'});
     });
   }
 
-  bool switching = true;
+  void sentlockdata(bool _test) {
+    setState(() {
+      final dbref = FirebaseDatabase.instance.reference();
+      _test == true
+          ? dbref.set({'lock': 'closed'})
+          : dbref.set({'lock': 'open'});
+    });
+  }
+
+  bool switching = false;
   bool lock = true;
 
   @override
@@ -48,6 +57,7 @@ class _ScreenDataState extends State<ScreenData> {
                         setState(() {
                           lock == true ? lock = false : lock = true;
                         });
+                        sentlockdata(lock);
                       }),
                 ),
                 Padding(
