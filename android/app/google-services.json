@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1019186920249",
+    "project_id": "follower-robot",
+    "storage_bucket": "follower-robot.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1019186920249:android:32973906eb78c74429c6e8",
+        "android_client_info": {
+          "package_name": "com.example.robot_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1019186920249-hpsff63qr99c7je7k26uncr9p2rl1dr1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC72w8NroPAKO0e3ORns_qgpv697RKDbOY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1019186920249-hpsff63qr99c7je7k26uncr9p2rl1dr1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
